@@ -16,8 +16,33 @@ This repository contains the code and resources for the paper "Real-Time Weather
 ## Results
 The SVM model achieved an accuracy of 92.8%, surpassing typical benchmarks for classical machine learning methods.
 
-## License
-[MIT License](LICENSE)
+## Scripts
+- `add_artificial_rain.py`: Script to add artificial rain to images.
+- `simulate_low_light.py`: Script to simulate low light conditions in images.
+- `add_haze.py`: Script to add haze to images.
+- `weather_image_classification_svm.py`: Script to extract features from images and classify them using SVM.
 
-## Contact
-For any questions or comments, please open an issue or contact the authors.
+## Dataset
+
+The dataset used for this project can be downloaded from the following link:
+
+[Download Dataset](https://drive.google.com/file/d/1HK_mUBxvNd-DolmXbY9kGzLoZvr_8xfI/view?usp=share_link)
+
+## Usage
+
+### Adding Artificial Rain
+python add_artificial_rain.py /path/to/source_folder /path/to/destination_folder --rain_intensity 1500
+
+### Simulating Low Light
+To simulate low light conditions on images, use the following command:
+python simulate_low_light.py /path/to/input_folder /path/to/output_folder
+
+### Adding Haze
+To add haze to images, use the following command:
+python add_haze.py /path/to/image.jpeg /path/to/output_folder --betas 0.05 0.06 0.07 --A 0.5
+
+### Classifying Weather Images
+To classify weather images using the SVM model, use the following command:
+python weather_image_classification_svm.py /path/to/dataset
+
+
